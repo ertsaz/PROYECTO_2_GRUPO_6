@@ -11,12 +11,21 @@
         android:label="fragment_onboarding1"
         tools:layout="@layout/fragment_onboarding1" >
         <action
-            android:id="@+id/action_onboarding1Fragment_to_onboarding2Fragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_onboarding1Fragment_to_integrantes"
+            app:destination="@id/integrantes" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.proyecto_2_grupo_6.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/integrantes"
+        android:name="com.example.proyecto_2_grupo_6.Integrantes"
+        android:label="fragment_integrantes"
+        tools:layout="@layout/fragment_integrantes" >
+        <action
+            android:id="@+id/action_integrantes_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
