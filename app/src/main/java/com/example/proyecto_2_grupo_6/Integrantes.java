@@ -13,18 +13,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-
-public class Onboarding1Fragment extends Fragment {
-
-    Button botonSiguiente;
+public class Integrantes extends Fragment {
+    Button botonFinalizar;
     NavController navController;
-    public Onboarding1Fragment() {
+    public Integrantes() {
         // Required empty public constructor
     }
 
-    public static Onboarding1Fragment newInstance(String param1, String param2) {
-        Onboarding1Fragment fragment = new Onboarding1Fragment();
-
+    public static Integrantes newInstance(String param1, String param2) {
+        Integrantes fragment = new Integrantes();
         return fragment;
     }
 
@@ -38,19 +35,22 @@ public class Onboarding1Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_onboarding1, container, false);
+        return inflater.inflate(R.layout.fragment_integrantes, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        navController = Navigation.findNavController(view);
-        botonSiguiente = view.findViewById(R.id.botonSiguiente);
 
-        botonSiguiente.setOnClickListener(new View.OnClickListener() {
+
+        navController = Navigation.findNavController(view);
+
+        botonFinalizar = view.findViewById(R.id.botonFinalizar);
+
+        botonFinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_onboarding1Fragment_to_integrantes);
+            public void onClick(View view) {
+                navController.navigate(R.id.action_integrantes_to_homeFragment);
             }
         });
     }
