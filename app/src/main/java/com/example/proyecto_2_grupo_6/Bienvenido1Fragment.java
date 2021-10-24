@@ -14,16 +14,16 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-public class Onboarding1Fragment extends Fragment {
+public class Bienvenido1Fragment extends Fragment {
 
     Button botonSiguiente;
     NavController navController;
-    public Onboarding1Fragment() {
+    public Bienvenido1Fragment() {
         // Required empty public constructor
     }
 
-    public static Onboarding1Fragment newInstance(String param1, String param2) {
-        Onboarding1Fragment fragment = new Onboarding1Fragment();
+    public static Bienvenido1Fragment newInstance(String param1, String param2) {
+        Bienvenido1Fragment fragment = new Bienvenido1Fragment();
 
         return fragment;
     }
@@ -38,7 +38,7 @@ public class Onboarding1Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_onboarding1, container, false);
+        return inflater.inflate(R.layout.fragment_1_bienvenida, container, false);
     }
 
     @Override

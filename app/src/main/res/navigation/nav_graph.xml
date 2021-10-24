@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/onboarding1Fragment"
-        android:name="com.example.proyecto_2_grupo_6.Onboarding1Fragment"
+        android:name="com.example.proyecto_2_grupo_6.Bienvenido1Fragment"
         android:label="fragment_onboarding1"
-        tools:layout="@layout/fragment_onboarding1" >
+        tools:layout="@layout/fragment_1_bienvenida" >
         <action
             android:id="@+id/action_onboarding1Fragment_to_integrantes"
             app:destination="@id/integrantes" />
