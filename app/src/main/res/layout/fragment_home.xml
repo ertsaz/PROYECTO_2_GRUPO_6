@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="#79B8F2"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/primer_fragment"
+        android:name="com.example.proyecto_2_grupo_6.primer_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_weight="1"/>
 
-</FrameLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/segundo_fragment"
+        android:name="com.example.proyecto_2_grupo_6.segundo_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/tercer_fragment"
+        android:name="com.example.proyecto_2_grupo_6.tercer_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+</LinearLayout>
