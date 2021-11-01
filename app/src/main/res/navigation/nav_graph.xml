@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_1_bienvenida" >
         <action
             android:id="@+id/action_onboarding1Fragment_to_integrantes"
-            app:destination="@id/integrantes" />
+            app:destination="@id/integrantes"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -26,6 +30,10 @@
         tools:layout="@layout/fragment_integrantes" >
         <action
             android:id="@+id/action_integrantes_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 </navigation>
